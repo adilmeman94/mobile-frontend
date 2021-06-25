@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="TOKEN_KEY" href="../src/services/api.service.js" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>Inventory Management</title>
+
+  <link rel="shortcut icon" href="/login.ico" />
+  <!-- <link rel="cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+  <script src="cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="main.js"></script>
+  <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
+  <script>
+    function displaySnack(message) {
+      // Get the snackbar DIV
+      var x = document.getElementById("snackbar");
+
+      // Add the "show" class to DIV
+      x.className = "show";
+      x.innerHTML = message
+      // After 5 seconds, remove the show class from DIV
+      setTimeout(function() { x.className = x.className.replace("show", ""); }, 3000);
+    }
+    // Enable pusher logging - don't include this in production
+    Pusher.logToConsole = true;
+
+    var pusher = new Pusher('35b9fee5ce285521683d', {
+      cluster: 'ap2'
+    });
+
+    var channel = pusher.subscribe('signup-notification');
+    channel.bind('signup-event', function (data) {
+      const message = data.message.message
+      console.log("Message", message)
+      console.log("Data", data)
+      // var a = localStorage.getItem((TOKEN_KEY))
+      var userStoredId = localStorage.getItem("userId")
+      if(userStoredId === data.message.toUserId ){
+        displaySnack(message)
+      } else {
+        console.log("message",message)
+      }
+     
+      // toast.error(message);
+      // alert(message);
+    });
+  </script>
+
+  <style>
+    #snackbar {
+      visibility: hidden;
+      /* Hidden by default. Visible on click */
+      min-width: 250px;
+      /* Set a default minimum width */
+      margin-left: -125px;
+      /* Divide value of min-width by 2 */
+      background-color: #333;
+      /* Black background color */
+      color: #fff;
+      /* White text color */
+      text-align: center;
+      /* Centered text */
+      border-radius: 2px;
+      /* Rounded borders */
+      padding: 16px;
+      /* Padding */
+      position: fixed;
+      /* Sit on top of the screen */
+      z-index: 1;
+      /* Add a z-index if needed */
+      left: 50%;
+      /* Center the snackbar */
+      bottom: 30px;
+      /* 30px from the bottom */
+    }
+
+    /* Show the snackbar when clicking on a button (class added with JavaScript) */
+    #snackbar.show {
+      visibility: visible;
+      /* Show the snackbar */
+      /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+      -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+      animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+
+    /* Animations to fade the snackbar in and out */
+    @-webkit-keyframes fadein {
+      from {
+        bottom: 0;
+        opacity: 0;
+      }
+
+      to {
+        bottom: 30px;
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadein {
+      from {
+        bottom: 0;
+        opacity: 0;
+      }
+
+      to {
+        bottom: 30px;
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes fadeout {
+      from {
+        bottom: 30px;
+        opacity: 1;
+      }
+
+      to {
+        bottom: 0;
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeout {
+      from {
+        bottom: 30px;
+        opacity: 1;
+      }
+
+      to {
+        bottom: 0;
+        opacity: 0;
+      }
+    }
+  </style> -->
+</head>
+
+<body>
+
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+
+  <!-- <div id="snackbar"></div> -->
+
+</body>
+
+</html>

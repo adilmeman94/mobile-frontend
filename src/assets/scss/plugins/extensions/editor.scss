@@ -1,0 +1,23 @@
+.demo-editor {
+  min-height: 275px !important;
+  border: 1px solid #d9d9d9 !important;
+  padding: 5px !important;
+  border-radius: 2px !important;
+}
+
+.demo-wrapper {
+  z-index: initial;
+  .rdw-editor-toolbar {
+    border: 1px solid #d9d9d9 !important;
+  }
+  .custom-tool {
+    margin-bottom: 6px;
+    cursor: pointer;
+  }
+}
+
+.demo-wrapper.is-invalid {
+  .demo-editor {
+    border: 1px solid red !important;
+  }
+}

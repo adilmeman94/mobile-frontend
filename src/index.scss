@@ -1,0 +1,120 @@
+@import "../node_modules/prismjs/themes/prism-tomorrow";
+@import "./assets/scss/app.scss";
+
+.input-group-text {
+  background-color: $primary;
+  border-color: $primary;
+  color: #fff;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.is-invalid {
+  .css-yk16xz-control {
+    border-color: #ea5455;
+  }
+
+  .css-yk16xz-control:hover {
+    border-color: #ea5455;
+  }
+}
+
+.css-2b097c-container,
+.custom-switch {
+  z-index: initial;
+}
+
+td {
+  border-bottom: 1px solid #d6d3d3 !important;
+}
+
+// react-dropdown-tree-select
+
+.react-dropdown-tree-select.is-invalid {
+  .dropdown-trigger {
+    border: 1px solid #ea5455;
+  }
+}
+
+.react-dropdown-tree-select {
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdown .dropdown-trigger {
+    border: 1px solid #d9d9d9;
+    border-radius: 0.25rem;
+    width: 100%;
+    padding: 2px;
+  }
+
+  .dropdown-trigger > span:after {
+    font-size: 12px;
+    color: #555;
+  }
+
+  .toggle {
+    font: normal normal normal 12px/1 FontAwesome;
+    color: #555;
+  }
+
+  .root {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .dropdown .dropdown-content {
+    width: 100%;
+  }
+
+  .dropdown-content {
+    z-index: 9999;
+  }
+
+  .dropdown .tag {
+    color: #fff !important;
+    background-color: $primary !important;
+    border-radius: 0.25rem;
+  }
+
+  .dropdown-trigger.arrow.bottom:after,
+  .dropdown-trigger.arrow.top:after {
+    display: none;
+  }
+
+  .tag-remove {
+    font-size: 14px !important;
+    text-align: center !important;
+    color: #fff;
+  }
+
+  .tag-item .search {
+    border-bottom: none !important;
+  }
+
+  .tree {
+    input[type="radio"],
+    input[type="checkbox"] {
+      display: none;
+    }
+  }
+
+  .node .node-label {
+    font-size: 16px !important;
+  }
+}
+
+.m-t-2 {
+  margin-top: 2rem;
+}
+
+.section-header {
+  margin-bottom: 20px;
+  font-weight: 500;
+  svg {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "name": "gift-admin",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://3.128.98.221:3001",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:local": "env-cmd -f .env.development.local react-scripts build",
+    "build:prod": "env-cmd -f .env.production.local react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "@react-pdf/renderer": "^2.0.15",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.4.1",
+    "chart.js": "^2.9.3",
+    "classnames": "~2.2.6",
+    "draft-js": "^0.11.4",
+    "draftjs-to-html": "^0.9.1",
+    "flatpickr": "^4.6.3",
+    "formik": "^2.1.3",
+    "history": "^4.10.1",
+    "immutability-helper": "^3.1.1",
+    "jquery": "^3.5.1",
+    "jspdf": "^2.3.1",
+    "jspdf-autotable": "^3.5.14",
+    "material-design-icons": "^3.0.1",
+    "memoize-one": "^5.1.1",
+    "moment": "~2.24.0",
+    "popper.js": "^1.16.1",
+    "postcss-rtl": "^1.5.0",
+    "prismjs": "^1.19.0",
+    "prop-types": "~15.7.2",
+    "query-string": "^6.10.1",
+    "react": "^17.0.1",
+    "react-beautiful-dnd": "^13.0.0",
+    "react-bootstrap-sweetalert": "^5.1.9",
+    "react-chartjs": "^1.2.0",
+    "react-dom": "^17.0.1",
+    "react-draft-wysiwyg": "^1.14.4",
+    "react-dropdown-tree-select": "^2.5.1",
+    "react-dropzone": "^10.2.1",
+    "react-feather": "~2.0.3",
+    "react-flatpickr": "^3.9.1",
+    "react-hammerjs": "^1.0.1",
+    "react-id-swiper": "~2.4.0",
+    "react-input-mask": "~2.0.4",
+    "react-paginate": "~6.3.2",
+    "react-perfect-scrollbar": "^1.5.5",
+    "react-redux": "~7.1.3",
+    "react-ripples": "^2.2.1",
+    "react-router-dom": "~5.1.2",
+    "react-scripts": "4.0.1",
+    "react-scroll-up": "~1.3.3",
+    "react-select": "^3.0.8",
+    "react-sidebar": "~3.0.2",
+    "react-step-wizard": "^5.3.6",
+    "react-switch": "^6.0.0",
+    "react-toastify": "^5.5.0",
+    "react-toggle": "~4.1.1",
+    "reactstrap": "^8.4.1",
+    "redux": "^4.0.5",
+    "redux-debounced": "^0.5.0",
+    "redux-thunk": "^2.3.0",
+    "socket.io-client": "^4.1.2",
+    "styled-components": "^5.0.1",
+    "swiper": "^5.3.0",
+    "web-vitals": "^0.2.4",
+    "yup": "^0.28.1"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "node-sass": "^4.13.1",
+    "react-app-rewire-postcss": "^3.0.2",
+    "react-app-rewired": "^2.1.5"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
